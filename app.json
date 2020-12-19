@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "해결의 마법항아리",
+    "slug": "potApp",
+    "version": "1.0.4",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/first_loading.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+       "package": "com.potapp.jinny",
+       "versionCode": 4,
+       "config": {
+           "googleMobileAdsAppId": "ca-app-pub-3584295739357422~7410014752"
+        },
+        "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
