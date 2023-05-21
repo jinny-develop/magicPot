@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/result_background_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_result"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-38dp" />
+
+    <ImageView
+        android:id="@+id/result_image"
+        android:layout_width="341dp"
+        android:layout_height="334dp"
+        android:src="@drawable/pot_result"
+        app:layout_constraintBottom_toBottomOf="@+id/result_background_imageview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409" />
+
+    <TextView
+        android:id="@+id/result_message"
+        android:layout_width="188dp"
+        android:layout_height="178dp"
+        android:textColor="#E3CFE5"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:fontFamily="@font/sangsangant"
+        app:layout_constraintBottom_toBottomOf="@+id/result_image"
+        app:layout_constraintEnd_toEndOf="@+id/result_image"
+        app:layout_constraintStart_toStartOf="@+id/result_image"
+        app:layout_constraintTop_toTopOf="@+id/result_image"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <ImageButton
+        android:id="@+id/go_to_main_page"
+        android:layout_width="71dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="go_to_main_page"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_image"
+        app:layout_constraintVertical_bias="0.372"
+        app:srcCompat="@drawable/reset" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
