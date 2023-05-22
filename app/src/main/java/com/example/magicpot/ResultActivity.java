@@ -1,6 +1,7 @@
 package com.example.magicpot;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -60,7 +61,7 @@ public class ResultActivity extends AppCompatActivity {
 
         // Full ad
         AdRequest fullAdRequest = new AdRequest.Builder().build();
-        InterstitialAd.load(this,"ca-app-pub-3940256099942544/1033173712", fullAdRequest,
+        InterstitialAd.load(this, "ca-app-pub-3584295739357422/3319732092", fullAdRequest,
             new InterstitialAdLoadCallback() {
                 @Override
                 public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
