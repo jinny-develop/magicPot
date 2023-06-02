@@ -2,23 +2,26 @@ plugins {
     id 'com.android.application'
 }
 
+def Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
 android {
-    namespace 'com.example.magicpot'
+    namespace 'com.potapp.jinny'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.magicpot"
+        applicationId "com.potapp.jinny"
         minSdk 24
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 7
+        versionName "2.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

@@ -1,4 +1,4 @@
-package com.example.magicpot;
+package com.potapp.jinny;
 
 import android.content.Intent;
 import android.os.Bundle;
