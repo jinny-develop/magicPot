@@ -45,15 +45,14 @@
         android:id="@+id/go_to_main_page"
         android:layout_width="71dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="50dp"
         android:background="@android:color/transparent"
         android:contentDescription="go_to_main_page"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result_image"
-        app:layout_constraintVertical_bias="0.372"
+        app:layout_constraintVertical_bias="0.545"
         app:srcCompat="@drawable/reset" />
 
     <com.google.android.gms.ads.AdView

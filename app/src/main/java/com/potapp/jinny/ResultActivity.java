@@ -59,7 +59,7 @@ public class ResultActivity extends AppCompatActivity {
 
         // Full ad
         AdRequest fullAdRequest = new AdRequest.Builder().build();
-        InterstitialAd.load(this, "ca-app-pub-3584295739357422/3319732092", fullAdRequest,
+        InterstitialAd.load(this, getResources().getString(R.string.admob_full_id), fullAdRequest,
             new InterstitialAdLoadCallback() {
                 @Override
                 public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
